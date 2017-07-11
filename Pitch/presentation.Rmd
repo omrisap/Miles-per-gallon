@@ -1,0 +1,53 @@
+---
+title: "Miles per gallon"
+output: ioslides_presentation
+date: 11-07-2017
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+This is presentation for analysing how diffrent attributes effect miles per gallon consumption
+
+**Table of Contents**
+
+- General idea
+- Data
+- Summary
+
+
+
+## General idea
+
+The purpose of this app is to try to understand how diffrent attributes can effect miles per gallon consumption, so in the app you can choosse VS which attribute to create the plot include linear regression line and filter by cylenders number and is the cars are automatic or not.
+
+![](ps.jpg)
+
+## Data
+
+A data frame with 32 observations on 11 variables.
+
+- mpg	 Miles/(US) gallon
+- cyl	 Number of cylinders
+- disp	 Displacement (cu.in.)
+- hp	 Gross horsepower
+- wt	 Weight (1000 lbs)
+- qsec	 1/4 mile time
+- am	 Transmission (0 = automatic, 1 = manual)
+
+
+```{r data}
+data("mtcars")
+head(mtcars)
+```
+
+
+
+## Summary
+
+The app could be find by link: https://omrisap.shinyapps.io/Cars/
+
+All source code Course Project locates on the GitHub repo:
+https://github.com/omrisap/Miles-per-gallon
